@@ -7,7 +7,7 @@ from torch.autograd.function import once_differentiable
 from torch.cuda.amp import custom_bwd, custom_fwd 
 
 try:
-    import _freqencoder as _backend
+    import _mwencoder as _backend
 except ImportError:
     from .backend import _backend
 
